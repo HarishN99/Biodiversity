@@ -11,13 +11,16 @@ Components of the page include:
 - Gauge Chart
 - About the Page
 
+<br> 
+
 
 ## Deliverable 4 Changes
 - Added an image to the jumbotron at the top of the page. 
 - Changed color of text to white, in order to make the words displayed on the jumbotron easier to read. 
-- Added further information in the form of figure legends for the bar chart, bubble chart, and gauge by using <p> tags. Also utilized <b> tags for bolding specific words. 
+- Added further information in the form of figure legends for the bar chart, bubble chart, and gauge by using paragraph tags. Also utilized bold tags for bolding specific words. 
 - Added more information about the project as a paragraph on the page in the form of an "About the Project" section. Changed the font-family style to 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif.
 
+<br>
 
 ![biodiver1](https://user-images.githubusercontent.com/94864663/160265367-0038ff00-97a2-4a09-b56a-f309b8c0bc27.png)
 

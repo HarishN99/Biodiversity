@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center" style: style="background-image: url(https://www.lysol.com/content/dam/lysol-us/article-detail-pages/purple-bacteria.jpg);")>
+            <h1 style = "color: white">Belly Button Biodiversity Dashboard</h1>
+            <p style = "color: white; background-color: black">Use the interactive charts below to explore the dataset</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="well">
+              <h5>Test Subject ID No.:</h5>
+              <!-- <select id="selDataset"></select> -->
+              <select
+                id="selDataset"
+                onchange="optionChanged(this.value)"
+              ></select>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Demographic Info</h3>
+                <h6></h6>
+              </div>
+              <div id="sample-metadata" class="panel-body"></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div id="bar"></div>
+            <p><b>Figure 1. </b>Bar chart displaying the top 10 bacteria cultures found for the test subject with OTU IDs on the y-axis. </p>
+          </div>
+          <div class="col-md-6">
+            <div id="gauge"></div>
+            <p><b>Figure 2. </b>Gauge displaying the weekly belly button watching frequency for the test subject in terms of the number of scrubs per week. </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="bubble"></div>
+            <p style="text-align: center"><b>Figure 3. </b>Bubble chart displaying the number of bacteria cultures per sample based on OTU ID for each bacteria. </p>
+          </div>
+        </div>
+        
+        <br>
+        
+        <div class="row">
+          <h2>About the Project</h2>
+          <hr>
+          <p style="font-size: medium; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">This project essentially aims to build an interactive dashboard to vizualize data pertaining to different species of bacteria living in the navel of candidates in a research project by Improbable beef regarding the produciton of meat from human bacteria. This page intends to help vizualize bacterial data for each volunter, identifying the top 10 bacterial species in their belly buttons such that if Improbable Beef identifies a species as a canditate to manufacture synthetic beef, the volunteers will then be able to identify whether that species is found in their navel. </p>
+        </div>
+        <br>
+
+
+      </div>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="charts.js"></script>
+
+</body>
+</html>
